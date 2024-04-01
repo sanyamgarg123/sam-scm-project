@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Toast Notifications</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="logo">LearnCoding</a>
+        <a class="active" href="coverpage.html">Home</a>
+        <a class="active" href="tutorial.html">Tutorials</a>
+        <a class="active" href="resources.html">Resources</a>
+        <a class="active" href="community.html">Community</a>
+        <a class="active" href="certification.html">Certifications</a>
+        <a class="active" href="language.html">Projects</a>
+        <a class="active" href="signin.html">SignUp</a>
+        <a class="active" href="loginpage.html">Login</a>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #fcfcfc;"></i>
+        </div>
+    </div>
+    <div class="laptoppic">
+        <div class="intro-heading">Learn Coding: Unlock Your Potential</div>
+        <div class="intro-content">Embark on a transformative journey of coding mastery with our comprehensive online
+            platform. Develop invaluable skills, explore innovative technologies, and ignite your passion for
+            programming. Join our vibrant community of learners and unlock infinite possibilities today!
+            <div class="buttons">
+                <button id="startButton" class="toast" onclick="myFunction()">Get Started</button>
+                <div id="snackbar">Getting Started....</div>
+            </div>
+        </div>
+    </div>
+        <span>
+            <hr class="line">
+        </span>
+        <div class="codingpower">
+            <div class="headcp">Discover the Power of Coding</div>
+            <div class="contentcp">Unleash your creativity, enhance problem-solving abilities, and open doors to
+                lucrative
+                career opportunities by learning to code. Mastering this essential skill empowers you to create
+                impactful
+                software solutions and shape the digital world. Are you ready to revolutionize your future?
+                <div class="point1">
+                    <div class="point1-head"><u>Endless Opportunities :</u></div>
+                    <div class="point1-content">From software development to website design, coding unlocks a variety of
+                        professional pathways.</div>
+                    <div class="point2">
+                        <div class="point2-head"><u>Critical Thinking :</u></div>
+                        <div class="point2-content">Develop analytical skills and creative problem-solving capabilities
+                            by
+                            tackling complex coding challenges.</div>
+                    </div>
+                    <div class="point3">
+                        <div class="point3-head"><u>Global Perspective :</u></div>
+                        <div class="point3-content">Coding bridges cultures and connects individuals worldwide through
+                            innovative technology solutions.</div>
+                    </div>
+                    <div class="point4">
+                        <div class="point4-head"><u>Future-Proof Skills :</u></div>
+                        <div class="point4-content">Prepare for the digital age and stay ahead in a world where coding
+                            literacy is rapidly becoming a necessity.</div>
+                    </div>
+                </div>
+            </div>
+            <span>
+                <hr class="line">
+            </span>
+            <div class="about">
+                <div class="about-head">About Us</div>
+                <div class="about-content">Our website is built by a team of passionate coders who believe in making
+                    programming accessible to all. We aim to empower individuals to unlock their potential through
+                    coding.For any inquiries or feedback, please feel free to contact us at info@learncoding.com .</div>
+            </div>
+</body>
+<script>
+    function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+</script>
+</html>
